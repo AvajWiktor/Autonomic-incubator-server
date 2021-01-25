@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- HTML file head: web page metadata -->
+	<head>
+		<title>LED Panel</title>
+		<!-- jQuery -->
+		
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		
+		<!-- Chart.js library -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		
+		<script type="text/javascript" src="scripts/config.js"></script> 
+		
+		
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {width: 100px;}
+</style>
+		
+	</head>
+
+	<!-- HTML file body: web page content -->
+	<body>
+		<h1 class="text">Config panel</h1>
+		
+	<div class="Colorbox">
+	<h3 class="text">Enter Hummidity value</h3>
+	<input type="text" id="hum" class="Colorbox">	
+	<h3 class="text">Enter Temperature value</h3>
+	<input type="text" id="temp" class="Colorbox">
+	<h3 class="text">Enter Lux value</h3>
+	<input type="text" id="light" class="Colorbox">
+	<div class="ResetDiv"><button id="saveBttn" class="LEDitem" onclick="saveHandler()">Save</button></div>
+	</div>
+	<div class="items">
+		<h3 style="text-align:left">Presets panel</h1>
+		<ul>
+			<li><button id="radishBtn" class="button button1" width = 100px onclick="presetHandler(radish)">Radish</button></li>
+			<li><button id="beanBtn"  class="button button1" onclick="presetHandler(bean)">Bean</button></li>
+			<li><button id="papricaBtn"  class="button button1" onclick="presetHandler(paprica)">Paprica</button></li>
+		<ul>
+	</div>
+	
+
+	</body>
+
+</html>
